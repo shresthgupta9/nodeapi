@@ -77,7 +77,7 @@ app.delete('/products/:id', async (req, res) => {
 });
 
 // connecting mongodb with nodejs
-mongoose.connect('mongodb+srv://admin:admin123@cluster0.endbyu0.mongodb.net/practiceAPI?retryWrites=true&w=majority').then(() => {
+mongoose.connect('in process.env file, need to install dotenv from npm').then(() => {
     try {
         console.log("ConnecteD to MDB");
         app.listen(port, () => {
